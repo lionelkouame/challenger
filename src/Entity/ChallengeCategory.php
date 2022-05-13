@@ -9,6 +9,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 #[ORM\Entity(repositoryClass: ChallengeCategoryRepository::class)]
 class ChallengeCategory
 {
+    use State;
+
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column(type: 'integer')]
@@ -21,6 +23,8 @@ class ChallengeCategory
         minMessage: 'Il faut au moins 3 caractères pour le nom',
         maxMessage: 'Il faut 200 caractères maximum')]
     private  $name;
+
+
 
     #[ORM\Column(type: 'string', length: 255)]
     private $code;

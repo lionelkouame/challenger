@@ -1,0 +1,18 @@
+framework:
+  workflows:
+    wf_category_challenge:
+      type: 'workflow' # or 'state_machine'
+      audit_trail:
+        enabled: true
+      supports:
+        - App\Entity\ChallengeCategory
+      initial_marking: created
+      places:
+        - created
+        - created_witout_challenge
+      transitions:
+        to_created:
+          from: created
+          to: created_witout_challenge
+
+

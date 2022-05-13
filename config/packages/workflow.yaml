@@ -1,0 +1,2 @@
+imports:
+    - { resource: workflow/wf_category_challenge.yaml }
