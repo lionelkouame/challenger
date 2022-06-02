@@ -14,5 +14,4 @@ class HomepageConntrollerTest extends WebTestCase
         $this->assertResponseStatusCodeSame(200, Response::HTTP_OK);
     }
 
-
 }
