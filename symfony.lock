@@ -272,7 +272,7 @@
         ]
     },
     "symfony/dependency-injection": {
-        "version": "v6.0.8"
+        "version": "v6.2.0"
     },
     "symfony/deprecation-contracts": {
         "version": "v3.0.1"
